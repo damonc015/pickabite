@@ -1,0 +1,52 @@
+.mapMenuContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.mapContainer {
+  height: 100%;
+  width: 60vw;
+  position: relative;
+}
+
+.altMapContainer {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.menuIconAlt {
+  position: absolute;
+  left: 0rem;
+  top: 2.67rem;
+  background-color: rgb(194, 194, 194);
+  padding: 1rem;
+  overflow: hidden;
+  z-index: 100;
+  height: 4rem;
+  width: 5rem;
+  transition: all .3s ease-out;
+  filter: invert(100%);
+}
+.menuIconAlt:hover{
+  filter: invert(0%);
+}
+
+@media (max-width: 1100px) {
+  .mapContainer {
+    width: 50vw;
+  }
+}
+@media (max-width: 800px) {
+  .mapMenuContainer {
+    justify-content: flex-start;
+  }
+  .mapContainer {
+    width: 100vw;
+  }
+}
