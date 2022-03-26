@@ -1,0 +1,87 @@
+.titleAndReview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: visible;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.allReviewContainer {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.219);
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+.reviewTitle {
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  padding: 0.25rem;
+  opacity: 80%;
+  width: 100%;
+  height: 2rem;
+  font-size: 1.1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}
+.arrow {
+  margin-left: 0.5rem;
+  margin-top: 0.1rem;
+  transition: all 0.5s ease-out;
+  color: #00b7ff;
+}
+
+.reviewTitle:hover > .arrow {
+  color: #01709c;
+}
+.reviewContainer {
+  border-top: 1px solid rgba(0, 0, 0, 0.219);
+  width: 100%;
+  height: auto;
+  font-family: "Lato", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.8rem 0;
+  gap: 0.8rem;
+}
+.ratingContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 0.6rem;
+}
+.ratings {
+  color: #ffca4e;
+}
+.time {
+  color: rgba(0, 0, 0, 0.8);
+  font-style: italic;
+}
+.textContainer {
+  width: 100%;
+  padding: 0 0.6rem;
+}
+.userContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 0.25rem;
+}
+.userImg {
+  position: relative;
+  width: 4rem;
+  height: 3.5rem;
+  margin-right: 0.5rem;
+}
