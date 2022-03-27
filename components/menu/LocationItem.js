@@ -29,16 +29,11 @@ const LocationItem = (props) => {
               return (
                 <SwiperSlide key={uuidv4()}>
                   <div className={classes.slideImg}>
-                    <img
+                    <Image
                       src={item.getUrl()}
                       alt=""
-                      // layout="fill"
-                      // objectFit="cover"
-                      style={{
-                        objectFit: "contain",
-                        width: "200px",
-                        height: "200px",
-                      }}
+                      layout="fill"
+                      objectFit="cover"
                     />
                   </div>
                 </SwiperSlide>
