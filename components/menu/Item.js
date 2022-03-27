@@ -98,12 +98,13 @@ const Item = (props) => {
         >
           {photos ? (
             photos.map((item, index) => {
+              let src = item.getUrl()
               if (index <= 7 && index > 0) {
                 return (
                   <SwiperSlide key={uuidv4()}>
                     <div className={classes.slideImg}>
                       <Image
-                        src={item.getUrl()}
+                        src={src}
                         alt=""
                         layout="fill"
                         objectFit="cover"
@@ -117,7 +118,7 @@ const Item = (props) => {
                   <SwiperSlide key={uuidv4()}>
                     <div className={classes.slideImg}>
                       <Image
-                        src={item.getUrl()}
+                        src={src}
                         alt=""
                         layout="fill"
                         objectFit="cover"
