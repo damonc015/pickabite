@@ -117,12 +117,12 @@ const Item = (props) => {
                 return (
                   <SwiperSlide key={uuidv4()}>
                     <div className={classes.slideImg}>
-                      <Image
+                      <img
                         src={src}
                         alt=""
-                        layout="fill"
-                        objectFit="cover"
-                        priority={true}
+                        // layout="fill"
+                        // objectFit="cover"
+                        // priority={true}
                       />
                     </div>
                   </SwiperSlide>
