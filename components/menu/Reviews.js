@@ -36,6 +36,7 @@ const Reviews = (props) => {
             relative_time_description,
             text,
           } = item;
+          
 
           let stars = new Array(rating).fill("1");
 

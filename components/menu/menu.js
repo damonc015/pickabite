@@ -59,6 +59,7 @@ const Menu = ({ area, setArea, locations, menu, setMenu }) => {
     console.log(data[0]);
     e.preventDefault();
   };
+  
 
   return (
     <div className={menu ? classes.menuContainer : classes.menuContainerAlt}>

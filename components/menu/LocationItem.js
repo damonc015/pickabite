@@ -25,6 +25,7 @@ const LocationItem = (props) => {
       >
         {photos ? (
           photos.map((item, index) => {
+            console.log(item.getUrl());
             if (index <= 7 && index > 0) {
               return (
                 <SwiperSlide key={uuidv4()}>
